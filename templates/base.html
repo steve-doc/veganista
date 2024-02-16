@@ -39,7 +39,7 @@
   </head>
   <body>
     <header class="container-fluid fixed-top">
-        
+
     </header>
 
     {% if messages %}
@@ -48,6 +48,20 @@
         </div>
     {% endif %}
 
+    
+    {% block page_header %}
+    
+    {% endblock %}
+
+
+    {% block content %}
+    
+    {% endblock %}
+    
+
+    {% block postload_js %}
+    
+    {% endblock %}
     
   </body>
 </html>
